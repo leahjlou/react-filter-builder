@@ -1,6 +1,6 @@
 # react-filter-builder
 
-A React component for building queries/filters.
+A React component for building queries/filters. See the [demo](https://leahjlou.github.io/react-filter-builder).
 
 ![Demo](demo.gif)
 
