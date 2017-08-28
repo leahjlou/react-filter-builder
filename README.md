@@ -2,7 +2,7 @@
 
 A React component for building queries/filters. See the [demo](https://leahjlou.github.io/react-filter-builder).
 
-![Demo](demo.gif)
+![Demo](http://raw.githubusercontent.com/leahjlou/react-filter-builder/master/demo.gif)
 
 This component provides a simple UI to build a query (or set of filters) for a data set, based on custom filters and operators.
 
