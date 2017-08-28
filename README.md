@@ -1,16 +1,16 @@
-# cpr-query-builder
+# react-filter-builder
 
 A React component for building queries/filters.
 
 ![Demo](demo.gif)
 
-The `QueryBuilder` component provides a simple UI to build a query (or set of filters) for a data set, based on custom filters and operators.
+This component provides a simple UI to build a query (or set of filters) for a data set, based on custom filters and operators.
 
 It is intended to build [Json-Query-Language](https://github.com/CanopyTax/Json-Query-Language), but operators can be defined and handled however you want.
 
 ## Installation
 
-`npm install cpr-query-builder`
+`npm install react-filter-builder`
 
 For default styles, you'll also need to load the stylesheet `style.css`
 
@@ -25,7 +25,7 @@ For default styles, you'll also need to load the stylesheet `style.css`
 ### Simple Usage
 
 ```javascript
-import QueryBuilder from 'react-query-builder';
+import FilterBuilder from 'react-filter-builder';
 
 let myFilterDefs = [
   {
@@ -45,7 +45,7 @@ function handleQueryChange(query) {
   // Do stuff with the query
 }
 
-<QueryBuilder filterDefs={myFilterDefs} handleQueryChange={handleQueryChange} />
+<FilterBuilder filterDefs={myFilterDefs} handleQueryChange={handleQueryChange} />
 ```
 
 ### filterDefs
@@ -130,7 +130,7 @@ let myInitialFilters = {
 ## Development
 
 1. Clone this repo
-2. `cd react-query-builder`
+2. `cd react-filter-builder`
 3. `yarn`
 4. `npm start`
 5. Open `localhost:8080`

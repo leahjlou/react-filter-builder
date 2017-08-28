@@ -1,5 +1,5 @@
 {
-  "name": "react-query-builder",
+  "name": "react-filter-builder",
   "description": "A React component for building queries/filters",
   "author": "Leah Loughran",
   "user": "leahjlou",
@@ -74,11 +74,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/leahjlou/react-query-builder.git"
+    "url": "https://github.com/leahjlou/react-filter-builder.git"
   },
-  "homepage": "https://leahjlou.github.io/react-query-builder/",
+  "homepage": "https://leahjlou.github.io/react-filter-builder/",
   "bugs": {
-    "url": "https://github.com/leahjlou/react-query-builder/issues"
+    "url": "https://github.com/leahjlou/react-filter-builder/issues"
   },
   "jest": {
     "collectCoverage": true,
