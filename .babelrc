@@ -1,0 +1,69 @@
+{
+  "presets": [
+    "react", "stage-1"
+  ],
+  "plugins": [
+    [
+      "transform-react-remove-prop-types",
+      {
+        "mode": "wrap"
+      }
+    ]
+  ],
+  "env": {
+    "dev": {
+      "presets": [
+        "es2015",
+        "react-hmre",
+				"stage-1"
+      ]
+    },
+    "development": {
+      "presets": [
+        "es2015",
+				"stage-1"
+      ]
+    },
+    "dist": {
+      "presets": [
+        "es2015",
+				"stage-1"
+      ]
+    },
+    "distMin": {
+      "presets": [
+        "es2015",
+				"stage-1"
+      ]
+    },
+    "ghPages": {
+      "presets": [
+        "es2015",
+				"stage-1"
+      ]
+    },
+    "modules": {
+      "presets": [
+        "es2015",
+				"stage-1"
+      ]
+    },
+    "es6": {
+      "presets": [
+        [
+          "es2015",
+          {
+            "modules": false
+          }
+        ],
+				"stage-1"
+      ]
+    },
+    "test": {
+      "presets": [
+        "es2015",
+				"stage-1"
+      ]
+    }
+  }
+}

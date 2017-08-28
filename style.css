@@ -1,0 +1,99 @@
+/* Default styles of component */
+
+.rqb-filter-group {
+	height: 100%;
+	overflow-y: auto;
+}
+
+.rqb-filter-group__filter {
+	background-color: white;
+	padding: 1.6rem;
+	margin: 1.6rem;
+	border: 1px solid #e9e9e9;
+	border-radius: 0.5rem;
+	position: relative;
+}
+
+.rqb-filter-group__filter.\+disabled {
+	cursor: default !important;
+}
+
+.rqb-filter-group__disabled-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-top: -1.6rem;
+	margin-left: -1.6rem;
+	opacity: 0.7;
+	background-color: #e9e9e9;
+}
+
+.rqb-filter-group__disabled-overlay__icon {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.rqb-filter-group__menu-item {
+	cursor: pointer;
+	margin: 0 -1.6rem;
+	padding: .8rem 1.6rem;
+}
+
+.rqb-filter-group__menu-item:hover {
+	background-color: #f7f7f7;
+}
+
+.rqb-filter-group__close-filter {
+	text-decoration: none !important;
+	cursor: pointer;
+	margin-top: -16px;
+	margin-right: -16px;
+	float: right;
+	position: relative;
+	color: #dfdfdf;
+}
+
+.rqb-filter-group__filter-summary {
+	cursor: pointer;
+}
+
+.rqb-filter-group__button {
+	background-color: #dfdfdf;
+	border-radius: 5px;
+	padding: 4px 24px;
+	cursor: pointer;
+}
+
+.rqb-filter-group__button:hover {
+	color: #b3b3b3;
+}
+
+.rqb-filter-group__filter-summary:hover {
+	box-shadow: 0 1px 4px 0 #dfdfdf;
+}
+
+.rqb-filter-group__filter .cpr-multi-selector {
+	width: 100%;
+}
+
+.rqb-filter-group__filter .cpr-multi-selector .cpr-multi-selector__pill {
+	max-width: 160px;
+}
+
+.rqb-filter-group__filter .cpr-multi-selector__dialog {
+	min-width: 0;
+	width: 20.3rem;
+	font-size: 12px;
+}
+
+.rqb-filter-group__filter .cpr-multi-selector__pill, .rqb-filter-group__filter .cpr-multi-selector__dialog__input {
+	font-size: 12px;
+}
+
+.rqb-filter-group__footer {
+	position: fixed;
+	bottom: 0;
+	width: 23.9rem;
+	padding: 0.8rem 2.4rem;
+}
