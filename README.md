@@ -131,7 +131,7 @@ let myInitialFilters = {
 
 1. Clone this repo
 2. `cd react-query-builder`
-3. `npm install`
-4. `npm run watch`
-5. Open `demo/index.html`
+3. `yarn`
+4. `npm start`
+5. Open `localhost:8080`
 
