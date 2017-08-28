@@ -3,7 +3,7 @@
   "description": "A React component for building queries/filters",
   "author": "Leah Loughran",
   "user": "leahjlou",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "scripts": {
     "start": "webpack-dev-server --env dev",
     "test": "jest",
