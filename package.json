@@ -102,9 +102,9 @@
     "test"
   ],
   "dependencies": {
-    "classnames": "^2.2.5",
     "lodash.clonedeep": "^4.5.0",
     "lodash.has": "^4.5.2",
-    "lodash.isempty": "^4.4.0"
+    "lodash.isempty": "^4.4.0",
+    "lodash.partial": "^4.2.1"
   }
 }

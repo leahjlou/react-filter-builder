@@ -10,7 +10,7 @@ export default class QueryBuilderDemo extends React.Component {
 	render() {
 		return (
 			<div style={{display: 'flex'}}>
-				<div style={{width: '300px'}}>
+				<div style={{width: '300px', marginBottom: '24px'}}>
 					<QueryBuilder
 						filterDefs={demoFilterDefs}
 						handleQueryChange={this.handleQueryChange}
