@@ -135,3 +135,8 @@ let myInitialFilters = {
 4. `npm start`
 5. Open `localhost:8080`
 
+### Publishing a new version
+
+1. `npm version <x.x.x>`
+2. `npm publish`
+
