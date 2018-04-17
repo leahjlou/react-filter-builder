@@ -17,10 +17,7 @@
     "dist:es6": "rimraf ./dist-es6 && BABEL_ENV=es6 babel ./src --out-dir ./dist-es6",
     "dist:min": "webpack --env distMin",
     "dist:modules": "rimraf ./dist-modules && BABEL_ENV=modules babel ./src --out-dir ./dist-modules",
-    "preversion": "npm run test && npm run dist && npm run dist:min && git commit --allow-empty -am \"Update dist\"",
-    "prepublish": "npm run dist:es6 && npm run dist:modules",
-    "postpublish": "npm run gh-pages && npm run gh-pages:deploy",
-    "postinstall": "node lib/post_install.js"
+    "preversion": "npm run test && npm run dist && npm run dist:min && git commit --allow-empty -am \"Update dist\""
   },
   "main": "dist-modules",
   "module": "dist-es6",
