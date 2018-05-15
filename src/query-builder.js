@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import isEmpty from 'lodash.isempty';
 import cloneDeep from 'lodash.clonedeep';
 import partial from 'lodash.partial';
@@ -75,10 +76,10 @@ export default class QueryBuilder extends React.Component {
 							`}
 							onClick={partial(this.setActiveFilterIndex, index)}
 						>
-							{filter.disabled ? disabledOverlay : null}	
+							{filter.disabled ? disabledOverlay : null}
 							<div>
 								<a className="rqb-filter-group__close-filter" onClick={partial(this.removeFilter, index)}>
-									&times;	
+									&times;
 								</a>
 								<div style={{marginBottom: '8px'}}>
 									<strong>{filter.filterDef.label}</strong>
@@ -86,7 +87,7 @@ export default class QueryBuilder extends React.Component {
 
 								{/* Editing filter or summary of filter */}
 								{this.state.activeFilterIndex == index ? editingFilter : filterSummary}
-							</div>	
+							</div>
 						</div>
 					)
 				})}
@@ -220,7 +221,7 @@ export default class QueryBuilder extends React.Component {
 };
 
 QueryBuilder.propTypes = {
-	filterDefs: React.PropTypes.array.isRequired,
-	handleQueryChange: React.PropTypes.func.isRequired,
-	initialFilters: React.PropTypes.array,
+	filterDefs: PropTypes.array.isRequired,
+	handleQueryChange: PropTypes.func.isRequired,
+	initialFilters: PropTypes.array,
 };
