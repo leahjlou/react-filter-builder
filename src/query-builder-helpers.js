@@ -56,15 +56,15 @@ function formatValue(filter) {
 	if (filter.operator.inputType === 'datepicker') {
 		return $filter('date')(filter.value, filter.field === 'birthday' ? 'MMM d' : 'M/d/yyyy');
 	} else if (filter.operator.inputType === 'daterange' && filter.value.length === 2) {
-		let date1 = $filter('date')(filter.value[0], filter.field === 'birthday' ? 'MMM d' : 'M/d/yyyy');
-		let date2 = $filter('date')(filter.value[1], filter.field === 'birthday' ? 'MMM d' : 'M/d/yyyy');
+		const date1 = $filter('date')(filter.value[0], filter.field === 'birthday' ? 'MMM d' : 'M/d/yyyy');
+		const date2 = $filter('date')(filter.value[1], filter.field === 'birthday' ? 'MMM d' : 'M/d/yyyy');
 		return date1 + ' and ' + date2
 	} else if (filter.operator.inputType === 'multiselect') {
 		let noun = filter.filterDef.label.toLowerCase();
 		if (noun === 'tags') noun = 'tag';
 		return prettyList(filter.value, 3, noun, null, filter.operator.getItemTitle);
 	} else if (filter.operator.inputType === 'select') {
-		let chosenOption = find(filter.operator.options, {key: filter.value});
+		const chosenOption = find(filter.operator.options, {key: filter.value});
 		return chosenOption ? chosenOption.value : '';
 	}
 

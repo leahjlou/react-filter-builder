@@ -27,7 +27,7 @@ For default styles, you'll also need to load the stylesheet `style.css`
 ```javascript
 import FilterBuilder from 'react-filter-builder';
 
-let myFilterDefs = [
+const myFilterDefs = [
   {
     field: 'name',
     label: 'Name',
@@ -60,7 +60,7 @@ function handleQueryChange(query) {
 Example:
 
 ```javascript
-let myFilterDefs = [
+const myFilterDefs = [
   {
     field: 'first_name',
     label: 'First Name',
@@ -88,7 +88,7 @@ Each operator object has (or can have) the following fields:
 Example:
 
 ```javascript
-let myOperators = [
+const myOperators = [
   {
     label: 'Starts With',
     operator: 'startswith',
@@ -120,7 +120,7 @@ Optionally, you can pass an array of filters to initialize the component. Each f
 Example:
 
 ```javascript
-let myInitialFilters = {
+const myInitialFilters = {
   field: 'first_name',
   operatorIndex: 0,
   value: 'jim',

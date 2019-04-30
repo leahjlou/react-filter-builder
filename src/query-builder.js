@@ -2,6 +2,7 @@ import React from 'react';
 import isEmpty from 'lodash.isempty';
 import cloneDeep from 'lodash.clonedeep';
 import partial from 'lodash.partial';
+import PropTypes from 'prop-types';
 
 import '../style.css';
 import FilterInput from './filter-input.js';
@@ -138,7 +139,7 @@ export default class QueryBuilder extends React.Component {
 
 	filterOperatorChanged = (filter, index, operator) => {
 		// Find filter in this.state.filters and update its operator to the given operator
-		let newFilters = cloneDeep(this.state.filters);
+		const newFilters = cloneDeep(this.state.filters);
 		newFilters[index] = {
 			...filter,
 			operator: operator,
@@ -150,7 +151,7 @@ export default class QueryBuilder extends React.Component {
 	};
 
 	filterValueChanged = (filter, index, event) => {
-		let newFilters = cloneDeep(this.state.filters);
+		const newFilters = cloneDeep(this.state.filters);
 		newFilters[index] = {
 			...filter,
 			value: event.target.value,
@@ -174,13 +175,13 @@ export default class QueryBuilder extends React.Component {
 					activeFilterIndex: null,
 				});
 
-			let query = filtersToQuery(this.state.filters);
+			const query = filtersToQuery(this.state.filters);
 			this.props.handleQueryChange(query);
 		});
 	};
 
 	addNewFilter = filterDef => {
-		let newFilter = {
+		const newFilter = {
 			field: filterDef.field,
 			operator: {},
 			value: filterDef.defaultValue || '',
@@ -220,7 +221,7 @@ export default class QueryBuilder extends React.Component {
 };
 
 QueryBuilder.propTypes = {
-	filterDefs: React.PropTypes.array.isRequired,
-	handleQueryChange: React.PropTypes.func.isRequired,
-	initialFilters: React.PropTypes.array,
+	filterDefs: PropTypes.array.isRequired,
+	handleQueryChange: PropTypes.func.isRequired,
+	initialFilters: PropTypes.array,
 };
